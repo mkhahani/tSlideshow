@@ -1,0 +1,30 @@
+/**
+ *  tSlideshow v1.0 CSS
+ *  http://khahani.com/tslideshow
+ */
+
+.tslideshow {
+  position: relative;
+  overflow: hidden;
+}
+.tslideshow-container {
+  padding: 20px;
+  background-color: black;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.tslideshow-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+.tslideshow-pagination span {
+  display: inline-block;
+  width: 16px; 
+  height: 16px; 
+  margin: 0 2px; 
+  background: url(pagination.gif) top no-repeat; 
+  cursor: pointer; 
+}
+.tslideshow-pagination .current {
+  background: url(pagination.gif) 0 -16px no-repeat;
+}

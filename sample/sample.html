@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>tSlideshow - Tiny DHTML/Javascript Slideshow</title>
+  <link type="text/css" rel="stylesheet" href="../tslideshow.css" />
+  <style type="text/css">
+    body {background-color:#EEEEEE;}
+    a {color:#555; text-decoration:none; border-bottom:1px dotted #555;}
+    .wrapper {width:500px; margin:0 auto;}
+    #container {padding-top:100px;}
+    #about {margin-top:20px; font:10px tahoma; line-height:1.6; color:#555; text-align:center;}
+  </style>
+  <script type="text/javascript" src="../tslideshow.js"></script>
+</head>
+<body>
+  <div id="container">
+
+    <div class="tslideshow-container wrapper">
+      <div id="slideshow1" class="tslideshow" style="width:500px; height:250px">
+        <img src="pics/slide-1.jpg" />
+        <img src="pics/slide-2.jpg" />
+        <img src="pics/slide-3.jpg" />
+        <img src="pics/slide-4.jpg" />
+        <img src="pics/slide-5.jpg" />
+        <img src="pics/slide-6.jpg" />
+        <img src="pics/slide-7.jpg" />
+      </div>
+    </div>
+
+    <div id="about" class="wrapper">
+      <div><strong>tSlideshow</strong> v1.0 - <a href="http://www.khahani.com/tslideshow" target="_blank">http://www.khahani.com/tslideshow</a></div>
+      <div>Licensed under the MIT license</div>
+      <div>&#169; 2011 <a href="http://www.khahani.com/" target="_blank">Mohsen Khahani</a></div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript">
+  tSlideshowConfig.interval = 4000;
+  s = new tSlideshow('slideshow1', true, false);
+  s.play(5000);
+</script>
+</html>
