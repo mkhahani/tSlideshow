@@ -1,5 +1,6 @@
 tSlideshow
 ==========
+## Tiny Javascript Slideshow ##
 
 tSlideshow is a standalone & lightweight javascript slider brings a simple slideshow to your website.
 
@@ -9,14 +10,15 @@ tSlideshow is free for personal or commerical use and publishes under the MIT li
 
 Features
 --------
-Standalone (no usage of JS framewoks such as prototype, jquery, mootools, ...)
-Incredibly lightweight with optimized source code (< 3kb)
-Full featured DHTML
-Compatible with all browsers
-Customizable using CSS
-Easy setup
-Pagination
-Simple slide transition effect
-Multi instance support
-Configurable per instanse
-Free to use (MIT license)
+* Standalone (no usage of JS framewoks such as prototype, jquery, mootools, ...)
+* Incredibly lightweight with optimized source code (< 3kb)
+* Full featured DHTML
+* Compatible with all browsers
+* Customizable using CSS
+* Easy setup
+* Pagination
+* Simple slide transition effect
+* Multi instance support
+* Configurable per instanse
+* Free to use (MIT license)
+
