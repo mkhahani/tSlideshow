@@ -1,6 +1,6 @@
 tSlideshow
 ==========
-## Tiny Javascript Slideshow ##
+#### Tiny Javascript Slideshow ####
 
 tSlideshow is a standalone & lightweight javascript slider brings a simple slideshow to your website.
 
@@ -22,3 +22,5 @@ Features
 * Configurable per instanse
 * Free to use (MIT license)
 
+### Live Demo ###
+http://khahani.com/demo/tslideshow
