@@ -22,7 +22,7 @@ Features
 * Configurable per instanse
 * Free to use (MIT license)
 
-## <a href="http://khahani.com/demo/tslideshow" target="_blank">Live Demo</a> ##
+### <a href="http://khahani.com/demo/tslideshow" target="_blank">Live Demo</a> ###
 
 Usage
 -----
