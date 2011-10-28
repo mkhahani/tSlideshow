@@ -76,4 +76,4 @@ Example
 
 Project Homepage
 ----------------
-href="http://khahani.com/tslideshow
+http://khahani.com/tslideshow
