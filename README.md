@@ -74,5 +74,5 @@ Example
   
     </html>
 
-
+-------------------------------------------------------
 ### Project Homepage: http://khahani.com/tslideshow ###
