@@ -24,11 +24,12 @@ Features
 
 ### Live Demo: ###
 http://khahani.com/demo/tslideshow
-[Live Demo](http://khahani.com/demo/tslideshow [MKH])
+### [Live Demo](http://khahani.com/demo/tslideshow [MKH]) ###
 
 Usage
 -----
 Simply use tSlideshow in two steps
+
 1. Add related JS and CSS files to your page:
         <link type="text/css" rel="stylesheet" href="tslideshow.css" />
         <script type="text/javascript" src="tslideshow.js"></script>
