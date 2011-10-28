@@ -22,7 +22,7 @@ Features
 * Configurable per instanse
 * Free to use (MIT license)
 
-#### <a href="http://khahani.com/demo/tslideshow" target="_blank">Live Demo</a> ####
+## <a href="http://khahani.com/demo/tslideshow" target="_blank">Live Demo</a> ##
 
 Usage
 -----
@@ -30,12 +30,12 @@ Use tSlideshow simply in two steps:
 
 1. Add related JS and CSS files to your page:
 
-    <link type="text/css" rel="stylesheet" href="tslideshow.css" />
-    <script type="text/javascript" src="tslideshow.js"></script>
+        <link type="text/css" rel="stylesheet" href="tslideshow.css" />
+        <script type="text/javascript" src="tslideshow.js"></script>
 
 2. Run it by a line of code:
 
-    new tSlideshow(elementID, pagination, autoPlay, startIndex);
+        new tSlideshow(elementID, pagination, autoPlay, startIndex);
 
 The first parameter, `elementID`, is the ID of the inner container. Indeed the layout of tSlideshow consists of two nested containers, naturally `<div>` tag, and slides inside them. Slides would be any html tag such as `<img>`, `<div>`, `<p>`, `<span>` or `<li>`.
 
