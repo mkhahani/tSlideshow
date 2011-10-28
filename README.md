@@ -4,7 +4,7 @@ tSlideshow
 
 tSlideshow is a standalone & lightweight javascript slider brings a simple slideshow to your website.
 
-tSlideshow is full featured DHTML anables you to create photo, text or html slideshows with a simple slide effect. It is based on XHTML 1.0 and is compatible with all major browsers (Opera, Firefox, Chrome & IE).
+> tSlideshow is full featured DHTML anables you to create photo, text or html slideshows with a simple slide effect. It is based on XHTML 1.0 and is compatible with all major browsers (Opera, Firefox, Chrome & IE).
 
 tSlideshow is free for personal or commerical use and publishes under the MIT license.
 
@@ -22,18 +22,19 @@ Features
 * Configurable per instanse
 * Free to use (MIT license)
 
-### Live Demo ###
+### Live Demo: ###
 http://khahani.com/demo/tslideshow
+[Live Demo](http://khahani.com/demo/tslideshow [MKH])
 
 Usage
 -----
 Simply use tSlideshow in two steps
 1. Add related JS and CSS files to your page:
-    <link type="text/css" rel="stylesheet" href="tslideshow.css" />
-    <script type="text/javascript" src="tslideshow.js"></script>
+        <link type="text/css" rel="stylesheet" href="tslideshow.css" />
+        <script type="text/javascript" src="tslideshow.js"></script>
 
 2. Run it by a line of code:
-    new tSlideshow(elementID, pagination, autoPlay, startIndex);
+        new tSlideshow(elementID, pagination, autoPlay, startIndex);
 
 The first parameter, `elementID`, is the ID of the inner container. Indeed tSlideshow layout consists of two nested containers, naturally `<div>` tag, and slides inside them. Slides can be any html tag such as `<img>`, `<div>`, `<p>`, `<span>` or `<li>`.
 
