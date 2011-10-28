@@ -24,7 +24,7 @@ Features
 
 Live Demo
 ---------
-### <a href="http://khahani.com/demo/tslideshow" target="_blank">Simple Image Slider</a> ###
+<a href="http://khahani.com/demo/tslideshow" target="_blank">Simple Image Slider</a>
 
 Usage
 -----
@@ -76,4 +76,4 @@ Example
 
 Project Homepage
 ----------------
-<a href="http://khahani.com/tslideshow" target="_blank"></a>
+<a href="http://khahani.com/tslideshow" target="_blank">http://khahani.com/tslideshow</a>
