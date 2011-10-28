@@ -8,6 +8,8 @@ tSlideshow is full featured DHTML anables you to create photo, text or html slid
 
 tSlideshow is free for personal or commerical use and publishes under the MIT license.
 
+### <a href="http://khahani.com/demo/tslideshow" target="_blank">Live Demo</a> ###
+
 Features
 --------
 * Standalone (no JS framewok or third party library usage)
@@ -21,8 +23,6 @@ Features
 * Multi instance support
 * Configurable per instanse
 * Free to use (MIT license)
-
-### <a href="http://khahani.com/demo/tslideshow" target="_blank">Live Demo</a> ###
 
 Usage
 -----
