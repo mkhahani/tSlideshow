@@ -4,9 +4,9 @@ tSlideshow
 
 tSlideshow is a standalone & lightweight javascript slider brings a simple slideshow to your website.
 
-tSlideshow is full featured DHTML anables you to create photo, text or html slideshows with a simple slide effect. It is based on XHTML 1.0 and is compatible with all major browsers (Opera, Firefox, Chrome & IE).
+tSlideshow enables you to create photo, text or html slideshows with a simple slide effect. It is compatible with all major browsers (Opera, Firefox, Chrome & IE).
 
-tSlideshow is free for personal or commerical use and publishes under the MIT license.
+tSlideshow is free to use and publishes under the MIT license.
 
 Features
 --------
@@ -74,4 +74,3 @@ Example
   
     </html>
 
-**Project Homepage:** http://khahani.com/tslideshow
