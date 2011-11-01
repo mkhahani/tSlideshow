@@ -2,10 +2,10 @@
  *  tSlideshow - Tiny DHTML/Javascript Slideshow, v1.0
  *  © 2011 Mohsen Khahani
  *
- *  Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php
+ *  Licensed under the MIT license
  *  Created on June 10, 2011
  *
- *  For more information visit: http://khahani.com/tslideshow
+ *  http://mohsenkhahani.com/tslideshow
  */
 
 
