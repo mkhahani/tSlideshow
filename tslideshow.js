@@ -21,7 +21,7 @@ var tSlideshowConfig = {
 
 
 /**
- *  tSlideshow base Class
+ *  tSlideshow base class
  */
 function tSlideshow(elementID, pagination, autoPlay, startIndex) {
     if (!(this.slider = document.getElementById(elementID))) { return; }
