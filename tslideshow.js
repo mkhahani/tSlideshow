@@ -10,7 +10,7 @@
 
 
 /**
- *  Default Configuration
+ *  Default configuration
  */
 var tSlideshowConfig = {
     pagination : true,
