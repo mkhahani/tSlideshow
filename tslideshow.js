@@ -21,7 +21,7 @@ var tSlideshowConfig = {
 
 
 /**
- *  tSlideshow Class
+ *  tSlideshow base Class
  */
 function tSlideshow(elementID, pagination, autoPlay, startIndex) {
     if (!(this.slider = document.getElementById(elementID))) { return; }
@@ -79,7 +79,7 @@ tSlideshow.prototype.pause = function () {
 
 
 /**
- * Goes to next slide
+ * Goes to the next slide
  */
 tSlideshow.prototype.next = function () {
     var nextIndex = (this.currIdx === this.count - 1) ? 0 : this.currIdx + 1,
@@ -152,7 +152,7 @@ tSlideshow.prototype.transform = function (slide, start, distance, interval, dur
 
 
 /**
- *  Switches to the selected slide index
+ *  Switches to selected slide index
  */
 tSlideshow.prototype.goToSlide = function (span) {
     var index = span.id.replace(this.pagination.id, ''),
@@ -168,7 +168,7 @@ tSlideshow.prototype.goToSlide = function (span) {
 
 
 /**
- *  Creates pagination buttons
+ *  Creates the pagination buttons
  */
 tSlideshow.prototype.getPagination = function () {
     var pageBox = document.createElement('div'),
@@ -188,7 +188,7 @@ tSlideshow.prototype.getPagination = function () {
 
 
 /**
- *  Adds click event to the pagination buttons
+ *  Adds click functionality to the pagination buttons
  */
 tSlideshow.prototype.addEvent = function (el) {
     var _this = this;
