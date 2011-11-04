@@ -22,7 +22,7 @@ Features
 
 Live Demo
 ---------
-* <a href="http://khahani.com/demo/tslideshow" target="_blank">Simple Image Slider</a>
+* <a href="http://mohsenkhahani.com/demo/tslideshow" target="_blank">Simple Image Slider</a>
 
 Usage
 -----
