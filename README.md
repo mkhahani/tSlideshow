@@ -4,7 +4,7 @@ tSlideshow
 
 tSlideshow is a standalone & lightweight javascript slider brings a simple slideshow to your website. By tSlideshow you will be able to create photo, text or html slideshows with a simple slide effect. It is compatible with all major browsers (Opera, Firefox, Chrome & IE).
 
-tSlideshow is free to use and publishes under the MIT license.
+tSlideshow is free and publishes under the MIT license.
 
 Features
 --------
@@ -17,7 +17,7 @@ Features
 * Pagination
 * Simple slide transition effect
 * Multi instance support
-* Configurable per instanse
+* Configurable per instance
 * Free to use (MIT license)
 
 Live Demo
