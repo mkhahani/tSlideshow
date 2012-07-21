@@ -10,34 +10,32 @@
     #container {padding-top:100px;}
     #about {margin-top:20px; font:10px tahoma; line-height:1.6; color:#555; text-align:center;}
   </style>
-  <script type="text/javascript" src="../tslideshow.js"></script>
+  <script type="text/javascript" src="../tslideshow-src.js"></script>
 </head>
 <body>
   <div id="container">
 
     <div class="tslideshow-container wrapper">
-      <div id="slideshow1" class="tslideshow" style="width:500px; height:250px">
-        <img src="pics/slide-1.jpg" />
-        <img src="pics/slide-2.jpg" />
-        <img src="pics/slide-3.jpg" />
-        <img src="pics/slide-4.jpg" />
-        <img src="pics/slide-5.jpg" />
-        <img src="pics/slide-6.jpg" />
-        <img src="pics/slide-7.jpg" />
+      <div id="slideshow1" class="tslideshow" style="height:250px;">
+        <img src="pics/slide-1.jpg" alt="This is slide #1" />
+        <img src="pics/slide-2.jpg" alt="This is slide #2" />
+        <img src="pics/slide-3.jpg" alt="This is slide #3" />
+        <img src="pics/slide-4.jpg" alt="This is slide #4" />
+        <img src="pics/slide-5.jpg" alt="This is slide #5" />
+        <img src="pics/slide-6.jpg" alt="This is slide #6" />
+        <img src="pics/slide-7.jpg" alt="This is slide #7" />
       </div>
     </div>
 
     <div id="about" class="wrapper">
-      <div><strong>tSlideshow</strong> v1.0 - <a href="http://mohsenkhahani.com/tslideshow" target="_blank">http://mohsenkhahani.com/tslideshow</a></div>
+      <div><strong>tSlideshow</strong> v1.1 - <a href="http://mohsen.khahani.com/tslideshow" target="_blank">http://mohsen.khahani.com/tslideshow</a></div>
       <div>Licensed under the MIT license</div>
-      <div>&#169; 2011 <a href="http://mohsenkhahani.com/" target="_blank">Mohsen Khahani</a></div>
+      <div>&copy; 2012 <a href="http://mohsen.khahani.com/" target="_blank">Mohsen Khahani</a></div>
     </div>
 
   </div>
 </body>
 <script type="text/javascript">
-  tSlideshowConfig.interval = 4000;
-  s = new tSlideshow('slideshow1', true, false);
-  s.play(5000);
+  new tSlideshow('slideshow1', {interval:4, duration:30});
 </script>
 </html>

@@ -1,6 +1,6 @@
 /**
- *  tSlideshow v1.0 CSS
- *  http://mohsenkhahani.com/tslideshow
+ *  tSlideshow v1.1 CSS
+ *  http://mohsen.khahani.com/tslideshow
  */
 
 .tslideshow {
@@ -10,12 +10,14 @@
 .tslideshow-container {
   padding: 20px;
   background-color: black;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 .tslideshow-pagination {
   margin-top: 20px;
   text-align: center;
+  direction: ltr;
 }
 .tslideshow-pagination span {
   display: inline-block;
@@ -27,4 +29,9 @@
 }
 .tslideshow-pagination .current {
   background: url(pagination.gif) 0 -16px no-repeat;
+}
+.tslideshow-subtitle {
+  font: 12px tahoma;
+  color: white;
+  padding: 10px 0;
 }

@@ -1,28 +1,30 @@
 tSlideshow
 ==========
-#### Tiny Javascript Slideshow ####
+#### Tiny DHTML/Javascript Slideshow ####
 
-tSlideshow is a standalone & lightweight javascript slider brings a simple slideshow to your website. By tSlideshow you will be able to create photo, text or html slideshows with a simple slide effect. It is compatible with all major browsers (Opera, Firefox, Chrome & IE).
+tSlideshow is a standalone & lightweight javascript slider brings a simple slideshow to your website. By tSlideshow you will be able to create photo, text or html slideshows with an effect (i.e. fade or slide). It is compatible with all major browsers (Opera, Firefox, Chrome, Safari & IE).
 
-tSlideshow is free to use and publishes under the MIT license.
+tSlideshow is free and publishes under the MIT license.
 
 Features
 --------
 * Standalone (no JS framewok or third party library usage)
-* Incredibly lightweight with optimized source code (< 3kb)
+* Incredibly lightweight with optimized source code (< 5kb)
 * Full featured DHTML
 * Compatible with all browsers
 * Customizable using CSS
 * Easy setup
-* Pagination
-* Simple slide transition effect
 * Multi instance support
-* Configurable per instanse
+* Configurable per instance
+* 2 transition effects (i.e. fade, slide)
+* Pagination support
+* Support for image subtitles
+* Pause & play functionality on mouse moves
 * Free to use (MIT license)
 
 Live Demo
 ---------
-* <a href="http://khahani.com/demo/tslideshow" target="_blank">Simple Image Slider</a>
+* <a href="http://mohsenkhahani.com/demo/tslideshow/sample.html" target="_blank">Simple Image Slider</a>
 
 Usage
 -----
@@ -35,11 +37,23 @@ Use tSlideshow simply in two steps:
 
 2. Run it by a line of code:
 
-        new tSlideshow(elementID, pagination, autoPlay, startIndex);
+        new tSlideshow(elementID, options);
 
 The first parameter, `elementID`, is the ID of the inner container. Indeed the layout of tSlideshow consists of two nested containers, naturally `<div>` tag, and slides inside them. Slides would be any html tag such as `<img>`, `<div>`, `<p>`, `<span>` or `<li>`.
 
-The function also takes three optional parameters, the boolean `pagination` & `autoPlay` and the integer `startIndex`. tSlideshow profits two useful functions, `play` & `pause`. In addition you can set playing `interval` manually.
+The second and optional parameter, `options`, configures the slideshow. Default options are as follow:
+pagination : Boolean [true, false] default to true
+subtitles  : Boolean [true, false] default to false
+startIndex : Integer default to 1 (Index of the start slide)
+interval   : Integer default to 5 (Time interval between slides transition in seconds)
+duration   : Integer default to 15 (Number of steps for a slide to be transformed)
+effect     : String ['fade', 'slide'] default to 'fade'
+
+So you may change default options by global variable `tSlideshowOptions` that affects on all created slideshow instances:
+        tSlideshowConfig.interval = 4;
+
+Also you can pass customized options to slideshow. See the example below.
+In order to add subtitle to slides, simply set the `alt` attribute of the images and set the `subtitles` option of the slideshow to true.
 
 Example
 -------
@@ -52,12 +66,12 @@ Example
        <div id="container">
       
          <div class="tslideshow-container">
-           <div id="slideshow1" class="tslideshow" style="width:500px; height:250px">
-             <img src="pics/slide-1.jpg" />
-             <img src="pics/slide-2.jpg" />
-             <img src="pics/slide-3.jpg" />
-             <img src="pics/slide-4.jpg" />
-             <img src="pics/slide-5.jpg" />
+           <div id="slideshow1" class="tslideshow" style="height:250px">
+             <img src="pics/slide-1.jpg" alt="Slide #1" />
+             <img src="pics/slide-2.jpg" alt="Slide #2" />
+             <img src="pics/slide-3.jpg" alt="Slide #3" />
+             <img src="pics/slide-4.jpg" alt="Slide #4" />
+             <img src="pics/slide-5.jpg" alt="Slide #5" />
            </div>
          </div>
       
@@ -65,10 +79,8 @@ Example
     </body>
       
     <script type="text/javascript">
-       tSlideshowConfig.interval = 4000;
-       s = new tSlideshow('slideshow1', true, false);
-       s.play(5000);
+       var options = {effect:'slide', pagination:false, duration:30};
+       new tSlideshow('slideshow1', options);
     </script>
   
     </html>
-
