@@ -24,7 +24,7 @@ Features
 
 Live Demo
 ---------
-* <a href="http://mohsenkhahani.com/demo/tslideshow/sample.html" target="_blank">Simple Image Slider</a>
+* <a href="http://mohsen.khahani.com/demo/tslideshow/sample.html" target="_blank">Simple Image Slider</a>
 
 Usage
 -----
@@ -49,11 +49,10 @@ interval   : Integer default to 5 (Time interval between slides transition in se
 duration   : Integer default to 15 (Number of steps for a slide to be transformed)
 effect     : String ['fade', 'slide'] default to 'fade'
 
-So you may change default options by global variable `tSlideshowOptions` that affects on all created slideshow instances:
+So you may change default options by setting global variable tSlideshowOptions that affects on all created slideshow instances:
         tSlideshowConfig.interval = 4;
 
-Also you can pass customized options to slideshow. See the example below.
-In order to add subtitle to slides, simply set the `alt` attribute of the images and set the `subtitles` option of the slideshow to true.
+Also you can pass desired options to slideshow. See the example below.
 
 Example
 -------
@@ -84,3 +83,7 @@ Example
     </script>
   
     </html>
+
+In order to add subtitle to slides, set the subtitles option of the slideshow to true. The alt attribute of images is used as subtitle.
+
+##Note##: In the time of loading the page and just before the slideshow to be initialized, there is a delay which cause all images of the slideshow are seen on the page for a bit of second (depends on your Internet connection speed). The solution is to set the height of the slideshow. I hope I could add image preloading feature to the next version.

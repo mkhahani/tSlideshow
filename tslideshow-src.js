@@ -1,36 +1,36 @@
 /**
- *  tSlideshow - Tiny DHTML/Javascript Slideshow, v1.1
- *  © 2011-2012 Mohsen Khahani
+ * tSlideshow - Tiny DHTML/Javascript Slideshow, v1.1
+ * © 2011-2012 Mohsen Khahani
  *
- *  Licensed under the MIT license
- *  Created on June 10, 2011
+ * Licensed under the MIT license
+ * Created on June 10, 2011
  *
- *  v1.1  July 18, 2012
- *      - Added new fade effect
- *      - Added pause on mouse over
- *      - Added support for image subtitle
- *      - Added start index option
- *      - Many code improvements
+ * v1.1  July 18, 2012
+ *     - Added new fade effect
+ *     - Added pause on mouse over
+ *     - Added support for image subtitle
+ *     - Added start index option
+ *     - Many code improvements
  *
- *  http://mohsen.khahani.com/tslideshow
+ * http://mohsen.khahani.com/tslideshow
  */
 
 
 /**
- *  Default configuration
+ * Default configuration
  */
 var tSlideshowOptions = {
-        pagination : true,
-        subtitles  : false,
-        startIndex : 1,      /* Index of the start slide */
-        interval   : 5,      /* Time interval between slides transition in seconds */
-        duration   : 15,     /* Number of steps for a slide to be transformed */
-        effect     : 'fade'  /* The slider effect. Currently 2 effects are supported {slide, fade} */
+    pagination : true,
+    subtitles  : false,
+    startIndex : 1,      /* Index of the start slide */
+    interval   : 5,      /* Time interval between slides transition in seconds */
+    duration   : 15,     /* Number of steps for a slide to be transformed */
+    effect     : 'fade'  /* The slider effect. Currently 2 effects are supported {slide, fade} */
 }
 
 
 /**
- *  tSlideshow base class
+ * tSlideshow base class
  */
 function tSlideshow(elementId, options) {
     var opts = tSlideshowOptions,
@@ -54,7 +54,7 @@ function tSlideshow(elementId, options) {
 
 
 /**
- *  Initiates the slideshow
+ * Initiates the slideshow
  */
 tSlideshow.prototype.init = function(id, pagination, start) {
     var self = this,
@@ -112,7 +112,7 @@ tSlideshow.prototype.init = function(id, pagination, start) {
 
 
 /**
- *  Starts playing the slideshow
+ * Starts playing the slideshow
  */
 tSlideshow.prototype.play = function() {
     if (this.slider && this.count > 1 && !this.playing) {
@@ -125,7 +125,7 @@ tSlideshow.prototype.play = function() {
 
 
 /**
- *  Pauses the slideshow
+ * Pauses the slideshow
  */
 tSlideshow.prototype.pause = function() {
     clearTimeout(this.timer);
@@ -134,7 +134,7 @@ tSlideshow.prototype.pause = function() {
 
 
 /**
- *  Goes to the next slide
+ * Goes to the next slide
  */
 tSlideshow.prototype.next = function() {
     var nextIndex = (this.currIdx === this.count - 1) ? 0 : this.currIdx + 1,
@@ -173,7 +173,7 @@ tSlideshow.prototype.next = function() {
 
 
 /**
- *  Switches to the next slide with givven effect
+ * Switches to the next slide with givven effect
  */
 tSlideshow.prototype.transform = function(slide, start, movement, doCall) {
     var interval = this.interval,
@@ -213,7 +213,7 @@ tSlideshow.prototype.transform = function(slide, start, movement, doCall) {
 
 
 /**
- *  Switches to the selected slide index
+ * Switches to the selected slide index
  */
 tSlideshow.prototype.goToSlide = function(span) {
     var index = span.id.replace(this.pager.id, ''),
@@ -229,7 +229,7 @@ tSlideshow.prototype.goToSlide = function(span) {
 
 
 /**
- *  Creates the pagination buttons
+ * Creates the pagination buttons
  */
 tSlideshow.prototype.getPagination = function() {
     var pageBox = document.createElement('div'),
@@ -249,7 +249,7 @@ tSlideshow.prototype.getPagination = function() {
 
 
 /**
- *  Adds click functionality to the pagination buttons
+ * Adds click functionality to the pagination buttons
  */
 tSlideshow.prototype.addClickEvent = function(el) {
     var self = this;
@@ -262,7 +262,7 @@ tSlideshow.prototype.addClickEvent = function(el) {
 
 
 /**
- *  Adds pause & play functionality on mouse move
+ * Adds pause & play functionality on mouse move
  */
 tSlideshow.prototype.addHoverEvent = function(el) {
     var self = this;
@@ -277,7 +277,7 @@ tSlideshow.prototype.addHoverEvent = function(el) {
 
 
 /**
- *  Changes related style to simulate the effect
+ * Changes related style to simulate the effect
  */
 tSlideshow.prototype.setAttrib = function(el, value) {
     switch (this.effect) {
