@@ -35,22 +35,23 @@ Use tSlideshow simply in two steps:
         <link type="text/css" rel="stylesheet" href="tslideshow.css" />
         <script type="text/javascript" src="tslideshow.js"></script>
 
-2. Run it by a line of code:
+2. Run it by a single line of code:
 
         new tSlideshow(elementID, options);
 
-The first parameter, `elementID`, is the ID of the inner container. Indeed the layout of tSlideshow consists of two nested containers, naturally `<div>` tag, and slides inside them. Slides would be any html tag such as `<img>`, `<div>`, `<p>`, `<span>` or `<li>`.
+The first parameter, `elementID`, is the ID of the inner container. Indeed the layout of tSlideshow consists of two nested containers, usually `<div>` tags, and slides inside them. Slides would be any html tag such as `<img>`, `<div>`, `<p>`, `<span>` or `<li>`.
 
 The second and optional parameter, `options`, configures the slideshow. Default options are as follow:
-pagination : Boolean [true, false] default to true
-subtitles  : Boolean [true, false] default to false
-startIndex : Integer default to 1 (Index of the start slide)
-interval   : Integer default to 5 (Time interval between slides transition in seconds)
-duration   : Integer default to 15 (Number of steps for a slide to be transformed)
-effect     : String ['fade', 'slide'] default to 'fade'
+* **pagination** : Boolean [true, false] default to true
+* **subtitles**  : Boolean [true, false] default to false
+* **startIndex** : Integer default to 1 (Index of the start slide)
+* **interval**   : Integer default to 5 (Time interval between slides transition in seconds)
+* **duration**   : Integer default to 15 (Number of steps for a slide to be transformed)
+* **effect**     : String ['fade', 'slide'] default to 'fade'
 
 So you may change default options by setting global variable tSlideshowOptions that affects on all created slideshow instances:
-        tSlideshowConfig.interval = 4;
+
+    tSlideshowConfig.interval = 4;
 
 Also you can pass desired options to slideshow. See the example below.
 
@@ -86,4 +87,5 @@ Example
 
 In order to add subtitle to slides, set the subtitles option of the slideshow to true. The alt attribute of images is used as subtitle.
 
-##Note##: In the time of loading the page and just before the slideshow to be initialized, there is a delay which cause all images of the slideshow are seen on the page for a bit of second (depends on your Internet connection speed). The solution is to set the height of the slideshow. I hope I could add image preloading feature to the next version.
+######Note:######
+In the time of loading the page and just before the slideshow to be initialized, there is a delay which cause all images of the slideshow are seen on the page for a bit of second (depends on your Internet connection speed). The solution is to set the height of the slideshow manually. I hope I could add **image preloading** feature to the next version.
