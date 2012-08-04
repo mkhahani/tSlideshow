@@ -88,4 +88,4 @@ Example
 In order to add subtitle to slides, set the subtitles option of the slideshow to true. The alt attribute of images is used as subtitle.
 
 ######Note:######
-In the time of loading the page and just before the slideshow to be initialized, there is a delay which cause all images of the slideshow are seen on the page for a bit of second (depends on your Internet connection speed). The solution is to set the height of the slideshow manually. I hope I could add **image preloading** feature to the next version.
+In the time of loading the page and just before the slideshow to be initialized, there is a delay which cause all images of the slideshow are seen on the page for a bit of second (depends on your Internet connection speed). The solution is to set the height of the slideshow manually. I hope I could add **image preloading** feature in the next version.
