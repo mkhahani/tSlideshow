@@ -1,6 +1,6 @@
 /**
  * tSlideshow - Tiny DHTML/Javascript Slideshow, v1.1
- * © 2011-2012 Mohsen Khahani
+ * © 2011-2013 Mohsen Khahani
  *
  * Licensed under the MIT license
  * Created on June 10, 2011
@@ -12,7 +12,7 @@
  *     - Added start index option
  *     - Many code improvements
  *
- * http://mohsen.khahani.com/tslideshow
+ * http://mohsenkhahani.ir/tslideshow
  */
 
 

@@ -24,7 +24,7 @@ Features
 
 Live Demo
 ---------
-* <a href="http://mohsen.khahani.com/demo/tslideshow/sample.html" target="_blank">Simple Image Slider</a>
+* <a href="http://mohsenkhahani.ir/demo/tslideshow/sample.html" target="_blank">Simple Image Slider</a>
 
 Usage
 -----
