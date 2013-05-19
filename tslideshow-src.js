@@ -1,16 +1,31 @@
 /**
  * tSlideshow - Tiny DHTML/Javascript Slideshow, v1.1
- * © 2011-2013 Mohsen Khahani
+ * Copyright 2011-2013 Mohsen Khahani
  *
  * Licensed under the MIT license
  * Created on June 10, 2011
  *
+ * Features:
+ *   - Pure JavaScript (no JS framewok or third party library usage)
+ *   - Incredibly lightweight with optimized codes (< 5kb)
+ *   - Full featured DHTML
+ *   - Compatible with all browsers
+ *   - Customizable using CSS
+ *   - Easy setup
+ *   - Multi instance support
+ *   - Configurable per instance
+ *   - 2 transition effects (fade & slide)
+ *   - Pagination support
+ *   - Support for image subtitles
+ *   - Pause & play functionality on mouse moves
+ *   - Free to use (MIT license)
+ *
  * v1.1  July 18, 2012
- *     - Added new fade effect
- *     - Added pause on mouse over
- *     - Added support for image subtitle
- *     - Added start index option
- *     - Many code improvements
+ *   - Added new fade effect
+ *   - Added pause on mouse over
+ *   - Added support for image subtitle
+ *   - Added start index option
+ *   - Many code improvements
  *
  * http://mohsenkhahani.ir/tslideshow
  */
@@ -26,7 +41,7 @@ var tSlideshowOptions = {
     interval   : 5,      /* Time interval between slides transition in seconds */
     duration   : 15,     /* Number of steps for a slide to be transformed */
     effect     : 'fade'  /* The slider effect. Currently 2 effects are supported {slide, fade} */
-}
+};
 
 
 /**
@@ -49,7 +64,7 @@ function tSlideshow(elementId, options) {
     this.reset     = false;
     this.skips     = 0;
 
-    this.init(elementId, pagination, start)
+    this.init(elementId, pagination, start);
 }
 
 
@@ -108,7 +123,7 @@ tSlideshow.prototype.init = function(id, pagination, start) {
 
     this.play();
     this.addHoverEvent(this.slider);
-}
+};
 
 
 /**
