@@ -27,8 +27,8 @@
   background: url(pagination.gif) top no-repeat; 
   cursor: pointer; 
 }
-.tslideshow-pagination .current {
-  background: url(pagination.gif) 0 -16px no-repeat;
+.tslideshow-pagination span.current {
+  background-position: 0 -16px;
 }
 .tslideshow-subtitle {
   font: 12px tahoma;
